@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TR3S — Datenschutzerklärung</title>
+<style>
+  :root {
+    --bg: #EDE9E0;
+    --chrome: #E0DBCF;
+    --bronze: #7A6640;
+    --text: #45403A;
+    --divider: rgba(122, 102, 64, 0.25);
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+    font-weight: 300;
+    line-height: 1.65;
+    padding: 56px 24px 80px;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  .brand {
+    font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--bronze); margin-bottom: 10px;
+  }
+  h1 { font-size: 28px; font-weight: 200; margin-bottom: 6px; }
+  .stand { font-size: 13px; color: var(--bronze); margin-bottom: 36px; }
+  .kernaussage {
+    border: 1px solid var(--divider);
+    border-left: 3px solid var(--bronze);
+    padding: 18px 22px;
+    margin-bottom: 40px;
+    font-size: 17px;
+  }
+  h2 {
+    font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase;
+    font-weight: 500; color: var(--bronze);
+    margin: 40px 0 12px; padding-top: 24px;
+    border-top: 1px solid var(--divider);
+  }
+  p + p { margin-top: 12px; }
+  ul { padding-left: 1.2rem; margin-top: 8px; }
+  li + li { margin-top: 6px; }
+  .placeholder { background: rgba(122,102,64,0.12); padding: 1px 6px; border-radius: 3px; }
+  footer { margin-top: 56px; font-size: 13px; color: var(--bronze); }
+  a { color: var(--bronze); }
+</style>
+</head>
+<body>
+<main>
+  <p class="brand">TR3S</p>
+  <h1>Datenschutzerklärung</h1>
+  <p class="stand">Stand: 20. Juli 2026 · <a href="#english">English summary below</a></p>
+
+  <div class="kernaussage">
+    <strong>Kurz gesagt:</strong> TR3S erhebt, sammelt und überträgt keinerlei Daten.
+    Deine Einträge verlassen dein Gerät nicht — die App hat keine Berechtigung
+    für den Internetzugriff. Das ist technisch garantiert, nicht nur versprochen.
+  </div>
+
+  <h2>Verantwortlicher</h2>
+  <p><span class="placeholder">[Name des Verantwortlichen]</span><br>
+     Kontakt: <span class="placeholder">[Support-E-Mail-Adresse]</span></p>
+
+  <h2>Welche Daten verarbeitet TR3S?</h2>
+  <p>TR3S ist ein minimalistischer Android-Launcher, der drei Tagesziele anzeigt.
+     Die App speichert ausschließlich lokal auf deinem Gerät:</p>
+  <ul>
+    <li>die Texte deiner drei Tagesziele und ihren Erledigt-Status,</li>
+    <li>deine App-Einstellungen (Sprache, Design, Tages-Reset).</li>
+  </ul>
+  <p>Diese Daten werden zu keinem Zeitpunkt an den Entwickler, an Google oder an
+     Dritte übertragen. Die App fordert keine Internet-Berechtigung an und kann
+     daher systembedingt keine Daten senden. Die Daten sind zudem vom
+     Android-Backup ausgenommen (<code>allowBackup=false</code>) und werden bei
+     der Deinstallation der App vollständig gelöscht.</p>
+
+  <h2>Keine Datenerhebung, kein Tracking</h2>
+  <ul>
+    <li>Keine Analyse- oder Tracking-Dienste (kein Google Analytics, kein Firebase)</li>
+    <li>Keine Absturzberichte an den Entwickler</li>
+    <li>Keine Werbung und keine Werbe-SDKs</li>
+    <li>Kein Konto, keine Anmeldung, keine Cloud-Synchronisation</li>
+    <li>Keine Weitergabe von Daten an Dritte — es gibt nichts weiterzugeben</li>
+  </ul>
+
+  <h2>Berechtigungen</h2>
+  <p>TR3S fordert keine Android-Berechtigungen an. Als Launcher zeigt die App die
+     Liste der auf deinem Gerät installierten Apps an; dafür nutzt sie die dafür
+     vorgesehene, eingeschränkte Android-Schnittstelle. Diese Liste wird nur zur
+     Anzeige auf dem Bildschirm gelesen und weder gespeichert noch übertragen.</p>
+
+  <h2>Google Play</h2>
+  <p>Beim Bezug der App über den Google Play Store verarbeitet Google als
+     eigenständiger Verantwortlicher Daten (z.&nbsp;B. Installationsstatistiken).
+     Informationen dazu findest du in der
+     <a href="https://policies.google.com/privacy" rel="noopener">Datenschutzerklärung von Google</a>.</p>
+
+  <h2>Änderungen</h2>
+  <p>Sollte sich der Funktionsumfang von TR3S ändern, wird diese Erklärung
+     aktualisiert. Die jeweils aktuelle Fassung ist unter dieser Adresse abrufbar.</p>
+
+  <h2 id="english">English Summary</h2>
+  <p>TR3S does not collect, store remotely, or share any data. Your three daily
+     goals and your settings are stored only on your device. The app does not
+     request internet permission and is therefore technically unable to transmit
+     anything. No analytics, no ads, no accounts, no cloud sync. Uninstalling the
+     app deletes all data. For questions contact:
+     <span class="placeholder">[support e-mail]</span>.</p>
+
+  <footer>TR3S — a daily contract with yourself.</footer>
+</main>
+</body>
+</html>
