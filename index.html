@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TR3S — Datenschutzerklärung</title>
+<title>TR3S — Datenschutzerklärung · Privacy Policy</title>
 <style>
   :root {
     --bg: #EDE9E0;
@@ -41,10 +41,14 @@
     margin: 40px 0 12px; padding-top: 24px;
     border-top: 1px solid var(--divider);
   }
+  .lang-divider {
+    margin-top: 64px; padding-top: 40px;
+    border-top: 2px solid var(--bronze);
+  }
   p + p { margin-top: 12px; }
   ul { padding-left: 1.2rem; margin-top: 8px; }
   li + li { margin-top: 6px; }
-  .placeholder { background: rgba(122,102,64,0.12); padding: 1px 6px; border-radius: 3px; }
+  code { font-size: 0.9em; }
   footer { margin-top: 56px; font-size: 13px; color: var(--bronze); }
   a { color: var(--bronze); }
 </style>
@@ -53,63 +57,135 @@
 <main>
   <p class="brand">TR3S</p>
   <h1>Datenschutzerklärung</h1>
-  <p class="stand">Stand: 20. Juli 2026 · <a href="#english">English summary below</a></p>
+  <p class="stand">Stand: 20. Juli 2026 · <a href="#english">English version below</a></p>
 
   <div class="kernaussage">
-    <strong>Kurz gesagt:</strong> TR3S erhebt, sammelt und überträgt keinerlei Daten.
-    Deine Einträge verlassen dein Gerät nicht — die App hat keine Berechtigung
-    für den Internetzugriff. Das ist technisch garantiert, nicht nur versprochen.
+    <strong>Kurzfassung:</strong> TR3S erhebt <strong>keine</strong> Daten, sammelt
+    <strong>keine</strong> Daten und teilt <strong>keine</strong> Daten. Die App besitzt
+    <strong>keinerlei Berechtigungen</strong> — nicht einmal Internetzugriff. Alle deine
+    Eingaben bleiben ausschließlich auf deinem Gerät.
   </div>
 
-  <h2>Verantwortlicher</h2>
-  <p><span class="placeholder">[Name des Verantwortlichen]</span><br>
-     Kontakt: <span class="placeholder">[Support-E-Mail-Adresse]</span></p>
+  <h2>1. Verantwortlicher</h2>
+  <p>Thomas Gunkel · E-Mail: <a href="mailto:dev@qomo-ai.com">dev@qomo-ai.com</a></p>
 
-  <h2>Welche Daten verarbeitet TR3S?</h2>
-  <p>TR3S ist ein minimalistischer Android-Launcher, der drei Tagesziele anzeigt.
-     Die App speichert ausschließlich lokal auf deinem Gerät:</p>
-  <ul>
-    <li>die Texte deiner drei Tagesziele und ihren Erledigt-Status,</li>
-    <li>deine App-Einstellungen (Sprache, Design, Tages-Reset).</li>
-  </ul>
-  <p>Diese Daten werden zu keinem Zeitpunkt an den Entwickler, an Google oder an
-     Dritte übertragen. Die App fordert keine Internet-Berechtigung an und kann
-     daher systembedingt keine Daten senden. Die Daten sind zudem vom
-     Android-Backup ausgenommen (<code>allowBackup=false</code>) und werden bei
-     der Deinstallation der App vollständig gelöscht.</p>
+  <h2>2. Welche Daten verarbeitet TR3S?</h2>
+  <p>TR3S ist ein minimalistischer Homescreen-Launcher. Du gibst drei Aufgaben („Todos")
+     sowie einige App-Einstellungen ein. Diese werden <strong>ausschließlich lokal</strong>
+     auf deinem Gerät gespeichert (Android DataStore Preferences).</p>
 
-  <h2>Keine Datenerhebung, kein Tracking</h2>
+  <h2>3. Keine Datenübertragung — technisch garantiert</h2>
+  <p>TR3S deklariert im App-Manifest <strong>keinerlei Berechtigungen</strong>, insbesondere
+     <strong>keinen Internetzugriff</strong> (<code>INTERNET</code>-Permission). Android
+     verhindert damit auf Systemebene jeglichen Netzwerkzugriff der App. TR3S kann Daten
+     also <strong>nicht</strong> an uns, an Server oder an Dritte senden — nicht, weil wir
+     es nicht wollen, sondern weil es <strong>technisch unmöglich</strong> ist.</p>
+
+  <h2>4. Kein Tracking, keine Werbung, keine Konten</h2>
   <ul>
-    <li>Keine Analyse- oder Tracking-Dienste (kein Google Analytics, kein Firebase)</li>
-    <li>Keine Absturzberichte an den Entwickler</li>
-    <li>Keine Werbung und keine Werbe-SDKs</li>
-    <li>Kein Konto, keine Anmeldung, keine Cloud-Synchronisation</li>
-    <li>Keine Weitergabe von Daten an Dritte — es gibt nichts weiterzugeben</li>
+    <li>Keine Analyse- oder Tracking-Dienste (kein Firebase, kein Google Analytics, kein Crashlytics)</li>
+    <li>Keine Werbung, keine Werbe-SDKs</li>
+    <li>Kein Nutzerkonto, kein Login, kein Cloud-Sync</li>
   </ul>
 
-  <h2>Berechtigungen</h2>
-  <p>TR3S fordert keine Android-Berechtigungen an. Als Launcher zeigt die App die
-     Liste der auf deinem Gerät installierten Apps an; dafür nutzt sie die dafür
-     vorgesehene, eingeschränkte Android-Schnittstelle. Diese Liste wird nur zur
-     Anzeige auf dem Bildschirm gelesen und weder gespeichert noch übertragen.</p>
+  <h2>5. Kein Backup deiner Daten</h2>
+  <p>Die App ist mit <code>android:allowBackup="false"</code> konfiguriert. Deine Eingaben
+     werden daher auch <strong>nicht</strong> in ein Android- oder Google-Backup übernommen.
+     Sie existieren ausschließlich lokal auf deinem Gerät.</p>
 
-  <h2>Google Play</h2>
-  <p>Beim Bezug der App über den Google Play Store verarbeitet Google als
-     eigenständiger Verantwortlicher Daten (z.&nbsp;B. Installationsstatistiken).
-     Informationen dazu findest du in der
-     <a href="https://policies.google.com/privacy" rel="noopener">Datenschutzerklärung von Google</a>.</p>
+  <h2>6. Zugriff auf installierte Apps</h2>
+  <p>Als Launcher zeigt TR3S dir deine installierten Apps zum Starten an. Dazu fragt die App
+     über das gescopte <code>&lt;queries&gt;</code>-Element ausschließlich Apps mit
+     Start-Funktion (Launcher-Intents) ab. Diese Information wird <strong>nur lokal</strong>
+     zur Anzeige verwendet und verlässt dein Gerät nicht.</p>
 
-  <h2>Änderungen</h2>
-  <p>Sollte sich der Funktionsumfang von TR3S ändern, wird diese Erklärung
-     aktualisiert. Die jeweils aktuelle Fassung ist unter dieser Adresse abrufbar.</p>
+  <h2>7. Löschung deiner Daten</h2>
+  <p>Da alle Daten lokal liegen, kannst du sie jederzeit selbst löschen — durch Löschen der
+     App-Daten in den Android-Einstellungen oder durch Deinstallation der App. Damit sind
+     alle Daten unwiderruflich entfernt. Ist der tägliche Reset aktiviert, werden die drei
+     Tagesaufgaben zudem automatisch jeden Tag geleert.</p>
 
-  <h2 id="english">English Summary</h2>
-  <p>TR3S does not collect, store remotely, or share any data. Your three daily
-     goals and your settings are stored only on your device. The app does not
-     request internet permission and is therefore technically unable to transmit
-     anything. No analytics, no ads, no accounts, no cloud sync. Uninstalling the
-     app deletes all data. For questions contact:
-     <span class="placeholder">[support e-mail]</span>.</p>
+  <h2>8. Deine Rechte (DSGVO)</h2>
+  <p>Da TR3S keine personenbezogenen Daten erhebt oder verarbeitet, die uns zugänglich wären,
+     liegen uns keine Daten über dich vor, die wir beauskunften, berichtigen oder löschen
+     könnten. Bei Fragen erreichst du uns unter
+     <a href="mailto:dev@qomo-ai.com">dev@qomo-ai.com</a>.</p>
+
+  <h2>9. Google Play</h2>
+  <p>Beim Bezug der App über den Google Play Store verarbeitet Google als eigenständiger
+     Verantwortlicher Daten (z.&nbsp;B. Installationsstatistiken). Informationen dazu findest
+     du in der <a href="https://policies.google.com/privacy" rel="noopener">Datenschutzerklärung
+     von Google</a>.</p>
+
+  <h2>10. Änderungen dieser Erklärung</h2>
+  <p>Sollte sich der Funktionsumfang von TR3S ändern, aktualisieren wir diese
+     Datenschutzerklärung entsprechend. Die jeweils aktuelle Fassung ist unter dieser
+     Adresse abrufbar.</p>
+
+  <div class="lang-divider" id="english">
+  <p class="brand">TR3S</p>
+  <h1>Privacy Policy</h1>
+  <p class="stand">Effective date: July 20, 2026</p>
+
+  <div class="kernaussage">
+    <strong>Summary:</strong> TR3S collects <strong>no</strong> data, gathers
+    <strong>no</strong> data, and shares <strong>no</strong> data. The app holds
+    <strong>no permissions whatsoever</strong> — not even internet access. Everything
+    you enter stays on your device only.
+  </div>
+
+  <h2>1. Data Controller</h2>
+  <p>Thomas Gunkel · Email: <a href="mailto:dev@qomo-ai.com">dev@qomo-ai.com</a></p>
+
+  <h2>2. What data does TR3S process?</h2>
+  <p>TR3S is a minimalist home screen launcher. You enter three tasks ("todos") and a few
+     app settings. These are stored <strong>exclusively locally</strong> on your device
+     (Android DataStore Preferences).</p>
+
+  <h2>3. No data transfer — technically guaranteed</h2>
+  <p>TR3S declares <strong>no permissions</strong> in its manifest, in particular
+     <strong>no internet access</strong> (<code>INTERNET</code> permission). Android
+     therefore blocks any network access by the app at the system level. TR3S
+     <strong>cannot</strong> send data to us, to servers, or to third parties — not because
+     we choose not to, but because it is <strong>technically impossible</strong>.</p>
+
+  <h2>4. No tracking, no ads, no accounts</h2>
+  <ul>
+    <li>No analytics or tracking services (no Firebase, no Google Analytics, no Crashlytics)</li>
+    <li>No advertising, no ad SDKs</li>
+    <li>No user account, no login, no cloud sync</li>
+  </ul>
+
+  <h2>5. No backup of your data</h2>
+  <p>The app is configured with <code>android:allowBackup="false"</code>, so your entries
+     are never included in an Android or Google backup. They exist only locally on your
+     device.</p>
+
+  <h2>6. Access to installed apps</h2>
+  <p>As a launcher, TR3S shows your installed apps so you can start them. It queries only
+     apps with launcher intents via the scoped <code>&lt;queries&gt;</code> element. This
+     information is used locally for display only and never leaves your device.</p>
+
+  <h2>7. Deleting your data</h2>
+  <p>Since all data is local, you can delete it anytime — by clearing the app's data in
+     Android settings or by uninstalling the app. If the daily reset is enabled, your three
+     daily tasks are additionally cleared automatically every day.</p>
+
+  <h2>8. Your rights (GDPR)</h2>
+  <p>Because TR3S does not collect or process any personal data accessible to us, we hold
+     no data about you to disclose, correct, or delete. Questions:
+     <a href="mailto:dev@qomo-ai.com">dev@qomo-ai.com</a></p>
+
+  <h2>9. Google Play</h2>
+  <p>When you obtain the app via the Google Play Store, Google processes data as an
+     independent controller (e.g. installation statistics). See
+     <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy
+     Policy</a> for details.</p>
+
+  <h2>10. Changes to this policy</h2>
+  <p>If TR3S's functionality changes, we will update this policy accordingly. The current
+     version is always available at this address.</p>
+  </div>
 
   <footer>TR3S — a daily contract with yourself.</footer>
 </main>
